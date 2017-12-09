@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">LeyyxSdk</string>
+    <string name="username">Username:</string>
+    <string name="password">Password:</string>
+    <string name="login">Login</string>
+    <string name="alipay">阿里支付</string>
+    <string name="weixin">微信支付</string>
+    <string name="Money_symbol">￥</string>
+    <string name="submit">提交</string>
+    <string name="register">注册</string>
+    <string name="losePwd">忘记密码</string>
+    <string name="seePwd">查看/隐藏密码</string>
+    <string name="pwdPng">密码图标</string>
+    <string name="inpPwd">请输入密码</string>
+    <string name="inpAccount">请输入账号</string>
+    <string name="logo">Logo</string>
+    <string name="verifyImg">验证码图片</string>
+    <string name="verifyPng">验证码图标</string>
+    <string name="accountPng">账号图标</string>
+    <string name="reEnterPwd">请再次输入密码</string>
+    <string name="inpVerify">请输入验证码</string>
+    <string name="closeBtn">关闭</string>
+    <string name="outTradeNo">外部订单号</string>
+    <string name="orderTime">订单时间</string>
+    <string name="orderInfo">订单信息</string>
+    <string name="tradeNo">订单号</string>
+    <string name="tradeSuccess">订单支付成功</string>
+    <string name="tradeSucPng">支付成功图标</string>
+</resources>

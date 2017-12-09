@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_marginBottom="50dp">
+
+        <ImageView
+            android:contentDescription="@string/tradeSucPng"
+            android:layout_marginTop="30dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ok" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:text="@string/tradeSuccess" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/trade_amount"
+            android:textSize="20sp"
+            android:textColor="#ec6a3e"
+            android:text="" />
+    </LinearLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#aeb1b3"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:padding="20dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tradeNo" />
+
+            <TextView
+                android:padding="20dp"
+                android:id="@+id/trade_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:gravity="start"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:padding="20dp"
+                android:text="@string/orderInfo" />
+
+            <TextView
+                android:id="@+id/trade_msg"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="2"
+                android:text="" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:text="@string/orderTime" />
+
+            <TextView
+                android:id="@+id/trade_time"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="2"
+                android:text="" />
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="0dp"
+            android:layout_weight="3">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="1"
+                android:text="@string/outTradeNo" />
+
+            <TextView
+                android:id="@+id/out_trade_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:layout_weight="2"
+                android:text="" />
+        </TableRow>
+
+    </TableLayout>
+    <View  android:layout_height="1px"
+        android:layout_width="match_parent"
+        android:background="#aeb1b3"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="#fff"
+        android:background="@drawable/shape_corner"
+        android:text="@string/closeBtn" />
+</LinearLayout>

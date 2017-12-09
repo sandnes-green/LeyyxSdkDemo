@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.leyyx.leyyxsdkdemo.MainActivity"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_toolbar"/>
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:layout_marginTop="20dp"
+            android:id="@+id/btn_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_corner"
+            android:textColor="#fff"
+            android:text="@string/btn_login" />
+
+        <Button
+            android:textColor="#fff"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/shape_corner"
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_pay" />
+    </LinearLayout>
+</LinearLayout>

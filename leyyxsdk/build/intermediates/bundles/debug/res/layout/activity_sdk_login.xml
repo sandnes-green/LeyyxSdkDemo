@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="#ec6a3e"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/logo"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="50dp"
+        android:background="@drawable/logo" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginRight="0dp">
+
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_marginStart="50dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/inpAccount"
+            android:textCursorDrawable="@drawable/color_cursor"
+            android:layout_marginLeft="0dp" />
+
+        <ImageView
+            android:contentDescription="@string/accountPng"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/user"
+            android:layout_marginLeft="0dp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="0dp">
+
+
+        <EditText
+            android:layout_marginStart="50dp"
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:hint="@string/inpPwd"
+            android:inputType="textPassword"
+            android:layout_marginLeft="0dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/password"
+            android:contentDescription="@string/pwdPng"
+            android:layout_marginLeft="0dp" />
+        <ImageButton
+            android:id="@+id/seePwd"
+            android:background="#00000000"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/invisible"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:tag="invisible"
+            android:layout_marginEnd="10dp"
+            android:contentDescription="@string/seePwd"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="0dp" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:background="@drawable/shape_corner"
+        android:text="@string/submit"
+        android:textColor="#fff" />
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/register"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="20sp"
+
+                android:layout_marginStart="50dp"
+                android:text="@string/register"
+                android:textColor="#116ca4"
+                android:layout_marginLeft="0dp" />
+
+            <TextView
+                android:textSize="20sp"
+                android:id="@+id/trade_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:layout_marginEnd="50dp"
+                android:text="@string/losePwd"
+                android:textColor="#116ca4"
+                android:layout_marginRight="0dp" />
+        </TableRow>
+</LinearLayout>
